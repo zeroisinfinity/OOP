@@ -8,17 +8,12 @@ class Box{
 	   double h;
 	   double edges;
 	   double faces;
-	   
-
-	
-
-	   
+	 
 	   double getlen(void);
 	   //CAN ADD VOID IN FUNC DEF BUT NOT while calling it/
 	   double getbre(void);
 	   double gethei(void);
 	   //double getlabel(void);
-	   
 	   
 	   void setlen(double len);
 	   void setbre(double bre);
@@ -36,7 +31,6 @@ class Box{
 		
 		l2 = l*3;
 		
-
 		cout<<"Paramterized constructor is called."<<endl;
 	 }/*NOW WHEN WE INNITIALIzED THE L2 IT WASN'T SET TO ----> 1)EITHER A GARABGE VALUE
 	                                                     //   2)OR TO ZERO
@@ -50,10 +44,7 @@ class Box{
 		cout<<"COPY CONSTRUCTOR IS CALLED\n";
 
 	 }
-		
-	   
-	  
-	   
+	
    public: //public two times... all r initialize when obj created l2 initialize b4 l
        double l2 = l*3;
        
@@ -67,13 +58,7 @@ class Box{
 	   double* ptr_h;
 	   double* ptr_edges;
 	   double* ptr_faces;
-	   
-	
-
-           
-           
-       
-       
+	  
 		 };
 		 
 		 
@@ -147,14 +132,11 @@ int main(){
 	   //vol 14260.3000
 	 //cout<<box1.l;
 	 
-	   
-	   
 	   cout<<box1.getlen()<<endl;
 	   //cout<<box1.getbre(void)<<endl; ERROR OF TYPE CAST 
 	   //compiler either set of args Or empty set only
 	   cout<<box1.getbre()<<endl;
 	   cout<<box1.gethei()<<endl;
-	   
 	   
 	   double vol = box2.l*box2.b*box2.h;
 	   cout<<"Volume of box2 is : "<<vol<<endl;
