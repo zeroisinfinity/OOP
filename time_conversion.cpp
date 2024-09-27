@@ -30,7 +30,7 @@ class Clock{
         //cout<<"Contents are copied."<<endl;
        }
        //Move constructor 
-       Clock(Clock&& other) noexcept : hours(other.hours),minutes(minutes){
+       Clock(Clock&& other) noexcept : hours(other.hours),minutes(other.minutes){
         /*cout<<"MOVE CONSTRUCTOR was called.\n"
         <<"Source object is converted to 'rvalue'\n"
         <<"Onwership of resources of Source object is now transferred to Target object."<<endl;*/
@@ -112,6 +112,7 @@ int main(){
     England.Display_time();
     England.DisplayTimeInMins();
 
+    //Clock India = Clock();
     Clock India(0,0);
     cout<<"Place India"<<endl;
     India.set_hours_mins();
@@ -129,4 +130,3 @@ int main(){
     Nepal.DisplayTimeInMins();
 
 }
-
