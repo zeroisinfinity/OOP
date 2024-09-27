@@ -23,7 +23,7 @@ void selection_sort(Gen arr[] , int records){//b1
          }//b2
          
          for(int show = 0 ; show  < records ; show++){//b5
-                cout<<arr[show];
+                cout<<arr[show]<<" ";
          }//b5
          
 }//b1
