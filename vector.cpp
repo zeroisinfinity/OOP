@@ -14,7 +14,7 @@ class Item{//b1
 		
 		
 		Item(){//b2
-			item_name = "/0";
+			item_name = "";
 			item_code = 0;
 			item_cost = 0.00;
 			quantity = 0.00;
